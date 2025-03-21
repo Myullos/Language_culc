@@ -16,7 +16,6 @@ Then, by applying cos similarity to the vectorized words, it is possible to add 
 
 また、今回はMacOSでの実装について説明する。（その為、ターミナル内での実行）
 
-
 最初に本プロジェクトをダウンロードし、`HomeBrew`をダウンロード。
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -43,6 +42,10 @@ python -m venv myenv
 ```
 ※`your_path`は,`Language_culc.v1.0.0`をダウンロードしたディレクトリのこと。<br/>
 `myenv`は、仮想環境名。任意で記入しても良いが、例として`myenv`にしている。<br/>
+その後、ダウンロードすべきである`language_dateset3a.model.vectors.npy`を取得するため、[download_npy.py](Language_culc.v1.0.0/download_npy.py)を実行
+```
+python download_npy.py
+```
 また、仮想環境を反映（アクティベート）するために、以下のコマンドを入力。
 ```
 source myenv/bin/activate
