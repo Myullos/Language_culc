@@ -97,24 +97,24 @@ python subtraction.py
 また、仕組みや学習法については[readme.pdf](description/readme.pdf)で詳しく記述している。<br/>
 また、制作フローは[language_culc_makingflow.pdf](description/language_culc_makingflow.pdf)によって図示している。
 ## license
-このプロジェクトは **MIT ライセンス** の下で提供されます。  
-ただし、本プロジェクトは以下のライブラリを利用しています。
+このプロジェクトは **MIT ライセンス** の下で提供される。  
+ただし、本プロジェクトは以下のライブラリを利用している。
 
 - **gensim** (ライセンス: LGPL-2.1-only)  
   https://github.com/RaRe-Technologies/gensim  
 
-`gensim` は **LGPL-2.1-only** ライセンスのもとで提供されており、  
-本プロジェクトを使用する際には `gensim` のライセンスに従う必要があります。
+`gensim` は **LGPL-2.1-only** ライセンスのもとで提供され、  
+本プロジェクトを使用するには `gensim` のライセンスに従う必要がある。
 
-詳細なライセンス条文については、以下をご確認ください。  
+詳細なライセンス条文については、以下を確認。  
 - [GNU Lesser General Public License v2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
 
 - **gdown** (ライセンス: MIT)  
   https://github.com/wkentaro/gdown  
 
-`gdown` は **MITライセンス** のもとで提供されており、そのライセンスの条件に従う必要があります。  
+`gdown` は **MITライセンス** のもとで提供されており、そのライセンスの条件に従う必要がある。  
 
-詳細については、以下を参照してください。  
+詳細については、以下を参照。  
 - [MIT License](https://opensource.org/licenses/MIT)
 
 
