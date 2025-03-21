@@ -31,7 +31,7 @@ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 ```
-`pyenv`を用いて、`python 3.10.0`をインストールし,適用。
+`pyenv`を用いて、`python 3.10.0`をインストールし、適用。
 ```
 pyenv install 3.10.0
 pyenv local 3.10.0
@@ -41,19 +41,64 @@ pyenv local 3.10.0
 cd your_path/Language_culc.v1.0.0
 python -m venv myenv
 ```
-※`your_path`は,`Language_culc.v1.0.0`をダウンロードしたディレクトリのこと。
-
-※`myenv`は、仮想環境名。任意で記入しても良いが例として`myenv`にしている。
-
+※`your_path`は,`Language_culc.v1.0.0`をダウンロードしたディレクトリのこと。<br/>
+　`myenv`は、仮想環境名。任意で記入しても良いが、例として`myenv`にしている。<br/>
 また、仮想環境を反映（アクティベート）するために、以下のコマンドを入力。
 ```
 source myenv/bin/activate
 ```
-これを行うと、
+これを実行すると、
 ```
 (myenv)username:~ user$
 ```
-となり、これがアクティベートに成功したことの証明となる。
+この画面が表示されたらアクティベートに成功したことになる。<br/>
+ここに、`gdown`や、`gensim`といったライブラリをインストールする。
+```
+pip install gdown
+pip install gensim
+```
+これを実行したら、環境構築は終了となる。
+## how to use
+本プロジェクトでは5つのpythonスクリプトが実行可能であり、以下の特性がある。
+```
+python vector.py
+```
+[vector.py](Language_culc.v1.0.0/vector.py)を実行すると、指定した単語のベクトルを取得することが可能となる。<br/>
+※単語を指定するため上記コマンドを実行した後、単語の入力を行う。
+```
+python similar.py
+```
+[similar.py](Language_culc.v1.0.0/similar.py)を実行すると、指定した単語の似た単語を取得することが可能となる。
+<br/>
+※単語の指定をするため上記コマンドを実行した後、単語の入力を行う。<br/>
+　似ている単語を昇順に何個出力するかを指定できる。そのため、数値の入力が必要となる。<br/>
+ （但し、数値の入力が見られなかった場合、20個の単語が出力される。
+```
+python similarity.py
+```
+[similarity.py](Language_culc.v1.0.0/similarity.py)を実行すると、指定した２単語間の類似度を取得することが可能となる。<br/>
+※２つの単語の指定をするため上記コマンドを実行した後、単語の入力を行う。<br/>
+```
+python add.py
+```
+[add.py](Language_culc.v1.0.0/add.py)を実行すると、指定した複数の単語を加法した単語を取得することが可能となる。<br/>
+※複数の単語を指定するため上記コマンドを実行した後、単語の入力を行う。<br/>
+　指定した複数の単語は、半角コンマで区切る必要がある。<br/>
+　指定した複数の単語を合成した意味に最も近いものを昇順に何個出力するかを指定できるため、数値の入力が必要となる。<br/>
+```
+python subtraction.py
+```
+[subtraction.py](Language_culc.v1.0.0/subtraction.py)を実行すると、指定した複数の単語を減法した単語を取得することが可能になる。<br/>
+※引かれる単語、引く単語の両者において複数の単語を指定できるため、上記コマンドを実行した後単語の入力を行う。<br/>
+　指定した単語は、半角コンマで区切る必要がある。<br/>
+  指定した複数の単語を減法した意味に最も近いものを何個出力するか指定できるため、数値の入力が必要である。
+
+また、全てのスクリプトにおいて、指定した単語がデータベース内に含まれていなかった場合エラーを返す。
+
+
+　
+
+
 
 
 
