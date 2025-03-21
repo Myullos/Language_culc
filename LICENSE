@@ -19,3 +19,25 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## Third-Party Libraries
+
+This project includes or depends on the following third-party libraries, which are distributed under their respective licenses:
+
+### 1. Gensim
+- **Library:** Gensim ([GitHub Repository](https://github.com/RaRe-Technologies/gensim))
+- **License:** GNU Lesser General Public License v2.1 (LGPL-2.1-only)
+- **Copyright (c) 2009–present RaRe Technologies Ltd.**
+- **License Terms:**  
+  This project dynamically links to `gensim` and does not modify its source code. According to the LGPL-2.1-only license, you are free to use, modify, and distribute this software as long as any modifications to `gensim` itself are also made available under the same LGPL-2.1-only terms.  
+  For full license details, please refer to the official [LGPL-2.1 License](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html).
+
+### 2. gdown
+- **Library:** gdown ([GitHub Repository](https://github.com/wkentaro/gdown))
+- **License:** MIT License
+- **Copyright (c) 2019 Kentaro Wada**
+- **License Terms:**  
+  The `gdown` package is licensed under the MIT License, which permits use, modification, and redistribution, provided that the original copyright notice and license text are included.  
+  For full license details, see the official [MIT License](https://opensource.org/licenses/MIT).
