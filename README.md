@@ -13,6 +13,7 @@ Then, by applying cos similarity to the vectorized words, it is possible to add 
 - MacOS Sequoia 15.0.1(windowsでも可)
 - gensim 4.3.3
 - gdown 5.2.0
+
 また、今回はMacOSでの実装について説明する。（その為、ターミナル内での実行）
 
 
@@ -40,8 +41,10 @@ pyenv local 3.10.0
 cd your_path/Language_culc.v1.0.0
 python -m venv myenv
 ```
-※`your_path`は,`Language_culc.v1.0.0`をダウンロードしたディレクトリのこと。/
-※`myenv`は、仮想環境名。任意で記入しても良いが例として`myenv`にしている。/
+※`your_path`は,`Language_culc.v1.0.0`をダウンロードしたディレクトリのこと。
+
+※`myenv`は、仮想環境名。任意で記入しても良いが例として`myenv`にしている。
+
 また、仮想環境を反映（アクティベート）するために、以下のコマンドを入力。
 ```
 source myenv/bin/activate
